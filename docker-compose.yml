@@ -2,6 +2,7 @@ version: "3"
 services:
   directus:
     image: directus/directus:10.13.1
+    platform: linux/amd64  # Spécifiez explicitement la plateforme
     ports:
       - 8055:8055
     volumes:
@@ -24,6 +25,7 @@ services:
 
   mysql:
     image: mysql:8.0
+    platform: linux/amd64  # Spécifiez explicitement la plateforme
     environment:
       MYSQL_ROOT_PASSWORD: "rootpassword"
       MYSQL_DATABASE: "directus"
@@ -35,7 +37,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    platform: linux/amd64
+    platform: linux/amd64  # Spécifiez explicitement la plateforme
     environment:
       PMA_HOST: mysql
       MYSQL_ROOT_PASSWORD: "rootpassword"
@@ -46,9 +48,9 @@ services:
 
   apache-php:
     image: php:8.0-apache
-    platform: linux/amd64
+    platform: linux/amd64  # Spécifiez explicitement la plateforme
     volumes:
-      - ./apache-php:/var/www/html
+      - ./www:/var/www/html  # Renommé en www
     ports:
       - 80:80
     depends_on:
