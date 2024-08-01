@@ -5,13 +5,51 @@ services:
     ports:
       - 8055:8055
     volumes:
-      - ./database:/directus/database
       - ./uploads:/directus/uploads
       - ./extensions:/directus/extensions
     environment:
       SECRET: "d1r3ctu5"
       ADMIN_EMAIL: "bulbi@pokemon.com"
       ADMIN_PASSWORD: "bulbi"
-      DB_CLIENT: "sqlite3"
-      DB_FILENAME: "/directus/database/data.db"
+      DB_CLIENT: "mysql"
+      DB_HOST: "mysql"
+      DB_PORT: 3306
+      DB_DATABASE: "directus"
+      DB_USER: "directus"
+      DB_PASSWORD: "directus"
       WEBSOCKETS_ENABLED: "true"
+    depends_on:
+      - mysql
+    command: sh -c "sleep 40 && npx directus bootstrap && npx directus start"
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+      MYSQL_DATABASE: "directus"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    platform: linux/amd64
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+    ports:
+      - 8080:80
+    depends_on:
+      - mysql
+
+  apache-php:
+    image: php:8.0-apache
+    platform: linux/amd64
+    volumes:
+      - ./apache-php:/var/www/html
+    ports:
+      - 80:80
+    depends_on:
+      - mysql
