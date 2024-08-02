@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Pikachu",
+    "height": 0.4,
+    "weight": 6.0,
+    "categoryId": 308,
+    "description": "Électrique.",
+    "imageUrl": "025.png",
+    "types": [
+      {"type_id": {"id": 8}},
+      {"type_id": {"id": 5}}
+    ]
+  }
+]
