@@ -4,11 +4,112 @@
     "height": 0.4,
     "weight": 6.0,
     "categoryId": 308,
-    "description": "Électrique.",
-    "imageUrl": "025.png",
+    "description": "Pikachu est un Pokémon de type Électrique. Il est connu pour ses joues rouges et sa capacité à générer de l'électricité.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
     "types": [
-      {"type_id": {"id": 8}},
       {"type_id": {"id": 5}}
+    ]
+  },
+  {
+    "name": "Bulbizarre",
+    "height": 0.7,
+    "weight": 6.9,
+    "categoryId": 309,
+    "description": "Bulbizarre est un Pokémon de type Plante et Poison. Il a une graine sur son dos qui pousse avec lui.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+    "types": [
+      {"type_id": {"id": 4}},
+      {"type_id": {"id": 8}}
+    ]
+  },
+  {
+    "name": "Salamèche",
+    "height": 0.6,
+    "weight": 8.5,
+    "categoryId": 310,
+    "description": "Salamèche est un Pokémon de type Feu. La flamme sur sa queue indique sa vitalité.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+    "types": [
+      {"type_id": {"id": 2}}
+    ]
+  },
+  {
+    "name": "Carapuce",
+    "height": 0.5,
+    "weight": 9.0,
+    "categoryId": 311,
+    "description": "Carapuce est un Pokémon de type Eau. Sa carapace le protège et lui permet de nager rapidement.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+    "types": [
+      {"type_id": {"id": 3}}
+    ]
+  },
+  {
+    "name": "Rondoudou",
+    "height": 0.5,
+    "weight": 5.5,
+    "categoryId": 312,
+    "description": "Rondoudou est un Pokémon de type Fée et Normal. Il peut endormir ses ennemis avec sa chanson.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png",
+    "types": [
+      {"type_id": {"id": 18}},
+      {"type_id": {"id": 1}}
+    ]
+  },
+  {
+    "name": "Miaouss",
+    "height": 0.4,
+    "weight": 4.2,
+    "categoryId": 313,
+    "description": "Miaouss est un Pokémon de type Normal. Il est connu pour sa capacité à parler le langage humain.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png",
+    "types": [
+      {"type_id": {"id": 1}}
+    ]
+  },
+  {
+    "name": "Psykokwak",
+    "height": 0.8,
+    "weight": 19.6,
+    "categoryId": 314,
+    "description": "Psykokwak est un Pokémon de type Eau. Il souffre souvent de maux de tête qui augmentent ses pouvoirs psychiques.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png",
+    "types": [
+      {"type_id": {"id": 3}}
+    ]
+  },
+  {
+    "name": "Ronflex",
+    "height": 2.1,
+    "weight": 460.0,
+    "categoryId": 315,
+    "description": "Ronflex est un Pokémon de type Normal. Il passe la plupart de son temps à manger et à dormir.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png",
+    "types": [
+      {"type_id": {"id": 1}}
+    ]
+  },
+  {
+    "name": "Ectoplasma",
+    "height": 1.5,
+    "weight": 40.5,
+    "categoryId": 316,
+    "description": "Ectoplasma est un Pokémon de type Spectre et Poison. Il peut se fondre dans les ombres pour effrayer ses ennemis.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
+    "types": [
+      {"type_id": {"id": 14}},
+      {"type_id": {"id": 8}}
+    ]
+  },
+  {
+    "name": "Évoli",
+    "height": 0.3,
+    "weight": 6.5,
+    "categoryId": 317,
+    "description": "Évoli est un Pokémon de type Normal. Il est célèbre pour ses nombreuses évolutions possibles.",
+    "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
+    "types": [
+      {"type_id": {"id": 1}}
     ]
   }
 ]
