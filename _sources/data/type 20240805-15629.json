@@ -1,0 +1,110 @@
+[
+	{
+		"id": 37,
+		"name": "Normal",
+		"image": "effa815c-19d5-4b41-86df-e589606bcfcb",
+		"englishName": "normal"
+	},
+	{
+		"id": 38,
+		"name": "Combat",
+		"image": "1a0a59d3-7d13-4650-b425-4286a5f4949f",
+		"englishName": "fighting"
+	},
+	{
+		"id": 39,
+		"name": "Vol",
+		"image": "a70393ee-e082-4d37-808e-e5548c99aacf",
+		"englishName": "flying"
+	},
+	{
+		"id": 40,
+		"name": "Poison",
+		"image": "d758d7cd-d0cc-4f43-8ef5-a75c58aab02f",
+		"englishName": "poison"
+	},
+	{
+		"id": 41,
+		"name": "Sol",
+		"image": "dd70905c-97f0-4cc6-b38b-b30010950f7d",
+		"englishName": "ground"
+	},
+	{
+		"id": 42,
+		"name": "Roche",
+		"image": "e6e6b3b3-e352-4601-894d-fbf3b88ecf64",
+		"englishName": "rock"
+	},
+	{
+		"id": 43,
+		"name": "Insecte",
+		"image": "1b0195fe-a6e9-44cf-99ed-e04a89fc365b",
+		"englishName": "bug"
+	},
+	{
+		"id": 44,
+		"name": "Spectre",
+		"image": "be44d8a8-eb2a-4b20-a395-a85c9ca99c6b",
+		"englishName": "ghost"
+	},
+	{
+		"id": 45,
+		"name": "Acier",
+		"image": "335abdf4-8294-4c03-843a-7c140ed9548f",
+		"englishName": "steel"
+	},
+	{
+		"id": 46,
+		"name": "Feu",
+		"image": "3239d23a-7829-472a-acff-5dd740fc0a5f",
+		"englishName": "fire"
+	},
+	{
+		"id": 47,
+		"name": "Eau",
+		"image": "eca67629-23a0-4962-91a1-b02bba1744a6",
+		"englishName": "water"
+	},
+	{
+		"id": 48,
+		"name": "Plante",
+		"image": "a64564f0-e76b-4b7d-965f-080041915bf2",
+		"englishName": "grass"
+	},
+	{
+		"id": 49,
+		"name": "Électrik",
+		"image": "ec05005d-340c-4f40-92e9-d7c578aecdc5",
+		"englishName": "electric"
+	},
+	{
+		"id": 50,
+		"name": "Psy",
+		"image": "f50e3bbe-2b81-47a7-86e1-af580c44d299",
+		"englishName": "psychic"
+	},
+	{
+		"id": 51,
+		"name": "Glace",
+		"image": "66e0fea7-47f1-4fc8-9de2-819e0dc3e7dd",
+		"englishName": "ice"
+	},
+	{
+		"id": 52,
+		"name": "Dragon",
+		"image": "85445aa7-bdd8-4191-b8c9-ec444a45147c",
+		"englishName": "dragon"
+	},
+	{
+		"id": 53,
+		"name": "Ténèbres",
+		"image": "3000db83-d984-4738-8b91-b38990cdf2b8",
+		"englishName": "dark"
+	},
+	{
+		"id": 54,
+		"name": "Fée",
+		"image": "5abf27b9-b41e-4e43-84f5-a5698d937311",
+		"englishName": "fairy"
+	}
+]
