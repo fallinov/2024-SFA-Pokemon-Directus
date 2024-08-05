@@ -1,2 +1,0 @@
-name,height,weight,categoryId,description,imageUrl,types
-Pikachu,0.4,6.0,308,"Électrique.","025.png",[{"type_id":{"id":8}},{"type_id":{"id":5}}]
