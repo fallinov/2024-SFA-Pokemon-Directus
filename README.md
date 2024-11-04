@@ -40,13 +40,6 @@ Ce projet est une application de collection de Pokémon utilisant Directus pour 
 
 ## Accéder aux Services
 
-### Directus
-
-- URL : [http://localhost:8055](http://localhost:8055)
-- Identifiants de connexion :
-  - Email : `bulbi@pokemon.com`
-  - Mot de passe : `bulbi`
-
 ### phpMyAdmin
 
 - URL : [http://localhost:8080](http://localhost:8080)
@@ -58,6 +51,13 @@ Ce projet est une application de collection de Pokémon utilisant Directus pour 
 
 - URL : [http://localhost](http://localhost)
 - Placez vos fichiers PHP dans le répertoire `www` sur votre machine locale pour qu'ils soient servis via Apache.
+
+### Directus (Il faut attendre 4-5 minutes après le démarrage)
+
+- URL : [http://localhost:8055](http://localhost:8055)
+- Identifiants de connexion :
+    - Email : `bulbi@pokemon.com`
+    - Mot de passe : `bulbi`
 
 ## Initialisation de la Base de Données
 
