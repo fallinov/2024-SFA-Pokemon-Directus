@@ -87,7 +87,7 @@ Identifiants :
 - Les fichiers PHP placés dans le dossier `www` sont automatiquement servis
 
 ## Base de Données
-L'initialisation est automatique via le script `init.sql` au démarrage de MySQL.
+L'initialisation des droits automatique via le script `init.sql` au démarrage de MySQL.
 
 ## Arrêt des Services
 ```bash
