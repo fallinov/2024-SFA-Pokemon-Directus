@@ -30,8 +30,6 @@ Ce projet est une application de collection de Pokémon utilisant Directus pour 
 
    ```bash
    docker-compose up -d
-   # ou pour les nouvelles versions de Docker
-   docker compose up -d
    ```
 
    Cette commande démarrera les services suivants :
