@@ -26,15 +26,10 @@ Vérifier la présence de Docker Compose :
 ```bash
 docker compose version
 # Exemple de sortie : Docker Compose version v2.21.0
-# ou pour les anciennes versions :
-docker-compose --version
 ```
 
 Vérifier que le service Docker est actif :
 ```bash
-# Sur Linux/macOS
-docker info
-# Sur Windows (PowerShell)
 docker info
 ```
 
@@ -43,12 +38,12 @@ docker info
 ```
 .
 ├── docker-compose.yml    # Configuration des services Docker
-├── www/                 # Fichiers PHP
-├── uploads/             # Fichiers Directus
-├── mysql_data/         # Données MySQL
-├── init.sql            # Script d'initialisation MySQL
-├── certs/              # Certificats SSL
-└── nginx.conf          # Configuration Nginx
+├── www/                  # Fichiers PHP
+├── uploads/              # Fichiers Directus
+├── mysql_data/           # Données MySQL
+├── init.sql              # Script d'initialisation MySQL
+├── certs/                # Certificats SSL
+└── nginx.conf            # Configuration Nginx
 ```
 
 ## Installation
