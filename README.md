@@ -19,7 +19,7 @@ Installation : [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 Vérifier la présence de Docker :
 ```bash
 docker --version
-# Exemple de sortie : Docker version 24.0.7, build afdd53b
+# Exemple de sortie : Docker version 27.2.0, build 3ab4256
 ```
 
 Vérifier la présence de Docker Compose :
