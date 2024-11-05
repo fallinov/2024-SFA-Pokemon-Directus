@@ -1,96 +1,117 @@
 # Projet 2024-SFA-Pokemon-Directus
 
-Ce projet est une application de collection de Pokémon utilisant Directus pour la gestion des données et un serveur
-Apache avec PHP. La base de données MySQL est utilisée pour stocker les données, et phpMyAdmin est fourni pour la
-gestion de la base de données. Le projet supporte également SSL pour des connexions sécurisées.
+Une application de collection de Pokémon construite avec :
+- Directus pour la gestion des données
+- Serveur Apache avec PHP
+- Base de données MySQL
+- phpMyAdmin pour l'administration de la base de données
+- Support SSL pour les connexions sécurisées
 
 ## Prérequis
 
-- Docker 
+- Docker
 - Docker Compose
 
-Voici le lien pour installer Docker et Docker Compose sur votre machine : https://www.docker.com/products/docker-desktop/
+Installation : [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### Vérification de l'installation
+
+Vérifier la présence de Docker :
+```bash
+docker --version
+# Exemple de sortie : Docker version 24.0.7, build afdd53b
+```
+
+Vérifier la présence de Docker Compose :
+```bash
+docker compose version
+# Exemple de sortie : Docker Compose version v2.21.0
+# ou pour les anciennes versions :
+docker-compose --version
+```
+
+Vérifier que le service Docker est actif :
+```bash
+# Sur Linux/macOS
+docker info
+# Sur Windows (PowerShell)
+docker info
+```
 
 ## Structure du Projet
 
-- `docker-compose.yml`: Fichier de configuration Docker Compose pour démarrer les services nécessaires.
-- `www/`: Répertoire pour les fichiers PHP.
-- `uploads/`: Répertoire pour les fichiers téléchargés par Directus.
-- `mysql_data/`: Répertoire pour les données MySQL.
-- `init.sql`: Script SQL pour initialiser la base de données MySQL.
-- `certs/`: Répertoire pour les certificats SSL.
-- `nginx.conf`: Fichier de configuration pour Nginx.
+```
+.
+├── docker-compose.yml    # Configuration des services Docker
+├── www/                 # Fichiers PHP
+├── uploads/             # Fichiers Directus
+├── mysql_data/         # Données MySQL
+├── init.sql            # Script d'initialisation MySQL
+├── certs/              # Certificats SSL
+└── nginx.conf          # Configuration Nginx
+```
 
+## Installation
 
-## Démarrer le Projet
+1. Cloner le projet :
+```bash
+git clone https://github.com/votre-utilisateur/2024-SFA-Pokemon-Directus.git
+```
 
-1. Clonez le dépôt GitHub sur votre machine locale :
-   ```bash
-   git clone https://github.com/votre-utilisateur/2024-SFA-Pokemon-Directus.git
-   cd 2024-SFA-Pokemon-Directus
-   ```
-2. Assurez-vous que Docker et Docker Compose sont installés et en cours d'exécution sur votre machine.
-3. Démarrez les services Docker :
-   ```bash
-   docker compose up -d
-   # ou pour les ancienne version de docker-compose
-   docker-compose up -d
-   ```
+2. Monter dans le dossier du projet :
+```bash
+cd 2024-SFA-Pokemon-Directus
+```
 
-Cette commande démarrera les services suivants :
-- Directus sur le port `8055` (HTTP) et `443` (HTTPS)
-- MySQL sur le port `3306`
-- phpMyAdmin sur le port `8080`
-- Apache avec PHP sur le port `80`
+3. Démarrer les services :
+```bash
+docker compose up -d
+```
 
+## Accès aux Services
 
-## Accéder à Directus
- > Il faut attendre 2-3 minutes pour que les services soient prêts.
- Ensuite, vous pouvez accéder à Directus via votre
+### Directus
+> Prévoir 2-3 minutes d'initialisation
 
-- URL : 
-  - [https://localhost](https://localhost)
-  - [http://localhost:8055](http://localhost:8055)
-- Identifiants de connexion :
-    - Email : `bulbi@pokemon.com`
-    - Mot de passe : `bulbi`
+Accès :
+- [https://localhost](https://localhost)
+- [http://localhost:8055](http://localhost:8055)
 
-## Accéder aux autres services
+Identifiants :
+- Email : `bulbi@pokemon.com`
+- Mot de passe : `bulbi`
 
 ### phpMyAdmin
-
 - URL : [http://localhost:8080](http://localhost:8080)
-- Identifiants de connexion :
-    - Nom d'utilisateur : `root`
+- Identifiants :
+    - Utilisateur : `root`
     - Mot de passe : `rootpassword`
 
-### Apache avec PHP
-
+### Apache/PHP
 - URL : [http://localhost](http://localhost)
-- Placez vos fichiers PHP dans le répertoire `www` sur votre machine locale pour qu'ils soient servis via Apache.
+- Les fichiers PHP placés dans le dossier `www` sont automatiquement servis
 
+## Base de Données
+L'initialisation est automatique via le script `init.sql` au démarrage de MySQL.
 
-
-## Initialisation de la Base de Données
-
-Le script `init.sql` est automatiquement exécuté lors du démarrage du conteneur MySQL pour configurer l'utilisateur et
-les permissions nécessaires.
-
-## Arrêter les Services
-
-Pour arrêter les services Docker, exécutez la commande suivante :
-
+## Arrêt des Services
 ```bash
 docker compose down
 ```
 
 ## Dépannage
 
-- Si vous rencontrez des problèmes de connexion à MySQL, assurez-vous que le fichier `init.sql` a été exécuté
-  correctement et que les permissions sont correctement configurées.
-- Pour voir les logs des conteneurs Docker, utilisez la commande suivante :
+En cas de problèmes :
 
-  ```bash
-  docker-compose logs
-  ```
+1. Vérifier l'exécution de `init.sql` et les permissions MySQL
+2. Consulter les logs :
+```bash
+docker compose logs
+```
 
+3. Si Docker ne démarre pas :
+```bash
+# Vérifier le statut du service Docker
+systemctl status docker    # Linux
+brew services list        # macOS
+```
